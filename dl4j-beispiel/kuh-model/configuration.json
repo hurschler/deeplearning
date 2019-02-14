@@ -1,0 +1,164 @@
+{
+  "backprop" : true,
+  "backpropType" : "Standard",
+  "cacheMode" : "NONE",
+  "confs" : [ {
+    "cacheMode" : "NONE",
+    "epochCount" : 0,
+    "iterationCount" : 0,
+    "l1ByParam" : {
+      "b" : 0.0,
+      "W" : 0.0
+    },
+    "l2ByParam" : {
+      "b" : 0.0,
+      "W" : 1.0E-4
+    },
+    "layer" : {
+      "dense" : {
+        "activationFn" : {
+          "TanH" : { }
+        },
+        "biasInit" : 0.0,
+        "biasUpdater" : null,
+        "constraints" : null,
+        "dist" : null,
+        "gradientNormalization" : "None",
+        "gradientNormalizationThreshold" : 1.0,
+        "hasBias" : true,
+        "idropout" : null,
+        "iupdater" : {
+          "@class" : "org.nd4j.linalg.learning.config.Sgd",
+          "learningRate" : 0.1
+        },
+        "l1" : 0.0,
+        "l1Bias" : 0.0,
+        "l2" : 1.0E-4,
+        "l2Bias" : 0.0,
+        "layerName" : "layer0",
+        "nin" : 4,
+        "nout" : 3,
+        "weightInit" : "XAVIER",
+        "weightNoise" : null
+      }
+    },
+    "maxNumLineSearchIterations" : 5,
+    "miniBatch" : true,
+    "minimize" : true,
+    "optimizationAlgo" : "STOCHASTIC_GRADIENT_DESCENT",
+    "pretrain" : false,
+    "seed" : 6,
+    "stepFunction" : null,
+    "variables" : [ "W", "b" ]
+  }, {
+    "cacheMode" : "NONE",
+    "epochCount" : 0,
+    "iterationCount" : 0,
+    "l1ByParam" : {
+      "b" : 0.0,
+      "W" : 0.0
+    },
+    "l2ByParam" : {
+      "b" : 0.0,
+      "W" : 1.0E-4
+    },
+    "layer" : {
+      "dense" : {
+        "activationFn" : {
+          "TanH" : { }
+        },
+        "biasInit" : 0.0,
+        "biasUpdater" : null,
+        "constraints" : null,
+        "dist" : null,
+        "gradientNormalization" : "None",
+        "gradientNormalizationThreshold" : 1.0,
+        "hasBias" : true,
+        "idropout" : null,
+        "iupdater" : {
+          "@class" : "org.nd4j.linalg.learning.config.Sgd",
+          "learningRate" : 0.1
+        },
+        "l1" : 0.0,
+        "l1Bias" : 0.0,
+        "l2" : 1.0E-4,
+        "l2Bias" : 0.0,
+        "layerName" : "layer1",
+        "nin" : 3,
+        "nout" : 3,
+        "weightInit" : "XAVIER",
+        "weightNoise" : null
+      }
+    },
+    "maxNumLineSearchIterations" : 5,
+    "miniBatch" : true,
+    "minimize" : true,
+    "optimizationAlgo" : "STOCHASTIC_GRADIENT_DESCENT",
+    "pretrain" : false,
+    "seed" : 6,
+    "stepFunction" : null,
+    "variables" : [ "W", "b" ]
+  }, {
+    "cacheMode" : "NONE",
+    "epochCount" : 0,
+    "iterationCount" : 0,
+    "l1ByParam" : {
+      "b" : 0.0,
+      "W" : 0.0
+    },
+    "l2ByParam" : {
+      "b" : 0.0,
+      "W" : 1.0E-4
+    },
+    "layer" : {
+      "output" : {
+        "activationFn" : {
+          "Softmax" : { }
+        },
+        "biasInit" : 0.0,
+        "biasUpdater" : null,
+        "constraints" : null,
+        "dist" : null,
+        "gradientNormalization" : "None",
+        "gradientNormalizationThreshold" : 1.0,
+        "hasBias" : true,
+        "idropout" : null,
+        "iupdater" : {
+          "@class" : "org.nd4j.linalg.learning.config.Sgd",
+          "learningRate" : 0.1
+        },
+        "l1" : 0.0,
+        "l1Bias" : 0.0,
+        "l2" : 1.0E-4,
+        "l2Bias" : 0.0,
+        "layerName" : "layer2",
+        "lossFn" : {
+          "NegativeLogLikelihood" : {
+            "configProperties" : false,
+            "softmaxClipEps" : 1.0E-10
+          }
+        },
+        "nin" : 3,
+        "nout" : 3,
+        "weightInit" : "XAVIER",
+        "weightNoise" : null
+      }
+    },
+    "maxNumLineSearchIterations" : 5,
+    "miniBatch" : true,
+    "minimize" : true,
+    "optimizationAlgo" : "STOCHASTIC_GRADIENT_DESCENT",
+    "pretrain" : false,
+    "seed" : 6,
+    "stepFunction" : null,
+    "variables" : [ "W", "b" ]
+  } ],
+  "epochCount" : 0,
+  "inferenceWorkspaceMode" : "SEPARATE",
+  "inputPreProcessors" : { },
+  "iterationCount" : 1000,
+  "pretrain" : false,
+  "tbpttBackLength" : 20,
+  "tbpttFwdLength" : 20,
+  "trainingWorkspaceMode" : "SEPARATE"
+}
